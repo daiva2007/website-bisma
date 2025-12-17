@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken</title>
+    <style>
+        *{ box-sizing: border-box; margin:0; padding:0; }
+
+        body{
+            background-color: #0b0b0b;
+             background: url(banner\ tekken02.webp) no-repeat center center fixed;
+             background-size: cover;
+             background-attachment: fixed;
+             height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            -webkit-font-smoothing:antialiased;
+        }
+
+        #header{
+            width: 900px;
+            height: 300px;
+            background-color: #140707;
+            background-image: url(Gambar/banner\ tekken02.webp);
+            background-size: cover;
+            background-position: center;
+            margin: 20px auto 10px auto;
+            border: 10px solid #330000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            display:flex; align-items:center; justify-content:center;
+        }
+
+        #header h1{
+            color: #ffdddd;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 0 6px rgba(255,0,0,0.12);
+            background: rgba(0,0,0,0.35);
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+        #content{
+            width: 900px;
+            height: auto;
+            background: linear-gradient(180deg, rgba(20,0,0,0.35), rgba(0,0,0,0.5));
+            margin-left: auto;
+            margin-right: auto;
+            padding: 18px;
+            border: 12px solid #220006;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.65);
+        }
+
+        #footer{
+            width: 900px;
+            height: 140px;
+            background-color: #120202;
+            background-image: url(takken\ banner03.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:14px;
+            border: 10px solid #2a0000;
+            display:flex; align-items:center; justify-content:center;
+            color:#ffdede;
+            text-shadow:0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .layout-table{ display: table; width: 100%; }
+        .layout-row{ display: table-row; }
+        .layout-cell{ display: table-cell; vertical-align: top; padding: 14px; }
+
+        .left-col{ width: 260px; }
+        .right-col{ width: calc(100% - 260px); }
+
+        .menu{
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.03);
+            padding: 12px;
+            border-radius: 6px;
+        }
+        .menu h3{ color: #ffb3b3; margin-bottom:8px; }
+        .menu ul{ list-style:none; padding-left:0; }
+        .menu li{ margin-bottom:10px; }
+        .menu a{ color:#ffd9d9; text-decoration:none; }
+        .menu a:hover{ color:#ffefef; text-shadow: 0 0 8px rgba(255,0,0,0.18); }
+
+        .character-list{ display:flex; gap:12px; flex-wrap:wrap; }
+        .char-card{ width:120px; background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.04); box-shadow:0 6px 18px rgba(0,0,0,0.6); }
+        .char-card img{ width:100%; height:auto; display:block; }
+        .char-card p{ text-align:center; padding:8px 6px; color:#ffdede; font-weight:600; }
+
+        .features{ margin-top:8px; }
+        .features li{ margin-bottom:8px; color:#ffdddd; }
+
+        @media (max-width: 980px){
+            #header, #content, #footer{ width:95%; }
+            .layout-table{ display:block; }
+            .layout-cell{ display:block; width:100%; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>TEKKEN</h1></div>
+    <div id="content">
+        <!--Content awal-->
+             <div class="layout-table">
+                <div class="layout-row">
+                <div class="layout-cell left-col">
+                <div class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#characters">Karakter</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                </div>
+                <div style="margin-top: 12px;" class="menu">
+                    <h3>Update</h3>
+                    <ul>
+                        <li>Patch 4.1 - Balance</li>
+                        <li>Event Tournament</li>
+                    </ul>
+                </div>
+        </div>
+        
+                <div class="layout-cell right-col">
+                    <section id="home">
+                        <h2 style="color:#ffdddd;">Selamat Datang di Tekken Arena</h2>
+                        <p style="color:#ffdede; line-height:1.6;">Masuki dunia Tekken — pelajari karakter, fitur, dan persiapkan diri untuk pertarungan epik.</p>
+                    </section>
+
+                    <!-- Latar cerita Tekken -->
+                    <section id="latar">
+                        <h2 style="color:#ffb3b3;">Latar Cerita Tekken</h2>
+                        <p style="color:#ffdede; line-height:1.6;">Seri Tekken mengikuti konflik keluarga Mishima dan dampaknya terhadap dunia.
+                             Perseteruan antara Heihachi, Kazuya, dan Jin adalah inti dari konflik yang melibatkan organisasi bayangan, eksperimen genetik (Devil Gene), 
+                             serta turnamen 'King of Iron Fist' yang menjadi arena untuk menyelesaikan dendam dan ambisi kekuasaan. 
+                            Cerita menyorot tema balas dendam, kekuasaan, dan takdir para petarung yang saling terkait.</p>
+                    </section>
+
+                    <!-- Tentang Tekken Arena -->
+                    <section id="about-arena">
+                        <h2 style="color:#ffb3b3;">Tentang Tekken Arena</h2>
+                        <p style="color:#ffdede; line-height:1.6;">Tekken Arena adalah fan-site bertema yang menampilkan profil karakter, informasi fitur game, dan sumber daya untuk pemain yang ingin belajar strategi. 
+                            Situs ini bertujuan menjadi pusat informasi bagi penggemar: mulai dari lore singkat, update turnamen, hingga tips dasar permainan.</p>
+                        <p style="color:#ffdede; line-height:1.6;">Konten di sini bukan produk resmi, melainkan penghormatan untuk seri Tekken. Untuk berita resmi dan rilis patch, selalu cek kanal resmi pengembang.</p>
+                    </section>
+
+                    <section id="characters">
+                        <h2 style="color:#ffb3b3;">Karakter Unggulan</h2>
+                        <div class="character-list">
+                            <div class="char-card">
+                                <img src="jin kazama.jpg" alt="Jin Kazama">
+                                <p>Jin Kazama</p>
+                            </div>
+                            <div class="char-card">
+                                <img src="kazuya mishima.jpg" alt="Kazuya Mishima">
+                                <p>Kazuya Mishima</p>
+                            </div>
+                            <div class="char-card">
+                                <img src="marshal law.jpg" alt="Marshall Law">
+                                <p>Marshall Law</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="features">
+                        <h2 style="color:#ffb3b3;">Fitur Game</h2>
+                        <ul class="features">
+                            <li>Mode Arcade & Story</li>
+                            <li>Ranking Online & Tournament</li>
+                            <li>Sistem Kombinasi (Combo) dan Special Move</li>
+                            <li>Stage Ikonik & Ambient Sound</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--Content akhir-->
+    </div>
+    <div id="footer">
+        <div style="text-align:center;">
+            <strong>© Copyright [Bisma Daiva Hilal Addison - 251011700330 - 01SIFP005]-2025 </strong>
+            <div style="font-size:0.85rem; margin-top:6px;">Follow saya: @bisma_daivaa</div>
+        </div>
+    </div>
+</body>
+</html>
