@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finbridge Consulting & Investment - Kontak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Finbridge.css">
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>Fin<span>bridge</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="Finbridge index.html">Beranda</a></li>
+                    <li><a href="Finbridge about.html">Tentang Kami</a></li>
+                    <li><a href="Finbridge services.html">Layanan</a></li>
+                    <li><a href="Finbridge gallery.html">Galeri</a></li>
+                    <li><a href="Finbridge contact.html" class="active">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Kami siap membantu Anda mencapai tujuan finansial. Hubungi kami untuk konsultasi gratis.</p>
+        </div>
+    </section>
+
+    <!-- Konten Utama -->
+    <main class="content">
+        <div class="container">
+            <!-- Bagian Waktu -->
+            <div class="time-container">
+                <h3>Waktu Saat Ini</h3>
+                <div id="current-time">00:00:00</div>
+                <div id="current-date">Hari, Tanggal Bulan Tahun</div>
+            </div>
+            
+            <div class="page-content">
+                <h2>Informasi Kontak</h2>
+                <p>Kami siap membantu Anda mencapai tujuan finansial. Silakan hubungi kami melalui informasi di bawah ini atau isi formulir untuk konsultasi gratis.</p>
+                
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Alamat Kantor</h3>
+                        <p>Jl. Sudirman No. 123, Jakarta Pusat 10220</p>
+                        <p>Gedung Finbridge, Lantai 15</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telepon</h3>
+                        <p>(021) 9876-5432</p>
+                        <p>(08) 7775-7878-86 (WhatsApp)</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>bismainfo@finbridge.com</p>
+                        <p>bismakonsultasi@finbridge.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Jam Operasional</h3>
+                        <p>Senin - Jumat: 09:00 - 18:00 WIB</p>
+                        <p>Sabtu: 09:00 - 16:00 WIB</p>
+                        <p>Minggu & Hari Libur: Tutup</p>
+                    </div>
+                </div>
+                
+                <div class="map-section">
+                    <h3>Lokasi Kantor Kami</h3>
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Peta interaktif lokasi Finbridge Consulting & Investment</p>
+                            <p>Jl. Elbony Golf No. 123, Jakarta </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Formulir Kontak</h3>
+                    <p>Isi formulir di bawah ini dan kami akan menghubungi Anda dalam waktu 1-2 hari kerja.</p>
+                    
+                    <div class="form-container">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Nama Lengkap <span class="required">*</span></label>
+                                    <input type="text" id="contact-name" class="form-control" placeholder="Masukkan nama lengkap" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-email">Email <span class="required">*</span></label>
+                                    <input type="email" id="contact-email" class="form-control" placeholder="Masukkan alamat email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-phone">Nomor Telepon <span class="required">*</span></label>
+                                    <input type="tel" id="contact-phone" class="form-control" placeholder="Masukkan nomor telepon" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-subject">Subjek <span class="required">*</span></label>
+                                    <input type="text" id="contact-subject" class="form-control" placeholder="Masukkan subjek pesan" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Pesan <span class="required">*</span></label>
+                                <textarea id="contact-message" class="form-control" placeholder="Tulis pesan Anda di sini" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="contact-newsletter" checked>
+                                    Saya ingin menerima newsletter dan informasi terbaru dari Finbridge
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn" style="width: 100%;">Kirim Pesan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Finbridge</h3>
+                    <p>Konsultasi & Investment terpercaya dengan pengalaman lebih dari 15 tahun dalam memberikan solusi keuangan terbaik.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigasi</h3>
+                    <a href="Finbridge index.html">Beranda</a>
+                    <a href="Finbridge about.html">Tentang Kami</a>
+                    <a href="Finbridge services.html">Layanan</a>
+                    <a href="Finbridge gallery.html">Galeri</a>
+                    <a href="Finbridge contact.html">Kontak</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Elbony Golf No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> (08) 7775-787-886</p>
+                    <p><i class="fas fa-envelope"></i> bismainfo@finbridge.com</p>
+                    <p><i class="fas fa-clock"></i> Senin - Jumat: 9:00 - 18:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Finbridge Consulting & Investment. </p>
+                <p>Dibuat oleh: Bisma Daiva, NIM: 251011700330, Kelas: 01SIFP005</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="time.js"></script>
+</body>
+</html>
